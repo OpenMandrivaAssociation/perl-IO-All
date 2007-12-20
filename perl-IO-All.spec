@@ -16,6 +16,7 @@ Buildrequires:	perl-devel
 %endif
 Buildrequires:  perl(IO::String)
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 IO::All combines all of the best Perl IO modules into a single Spiffy object
