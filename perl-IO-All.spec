@@ -1,22 +1,22 @@
-%define	module	IO-All
-%define	name	perl-%{module}
-%define	version	0.39
-%define	release	%mkrel 1
+%define	upstream_name	 IO-All
+%define	upstream_version 0.39
 
-Version:	%{version}
-Name:		%{name}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Magic all-in-one IO class
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
-Source:		http://www.cpan.org/modules/by-module/IO/%{module}-%{version}.tar.bz2
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/IO/%{upstream_name}-%{upstream_version}.tar.bz2
+
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
 Buildrequires:  perl(IO::String)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 IO::All combines all of the best Perl IO modules into a single Spiffy object
@@ -25,7 +25,7 @@ a single function called io, which returns a new IO::All object. And that
 object can do it all!
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -46,6 +46,3 @@ rm -rf %{buildroot}
 %doc Changes README
 %{_mandir}/man*/*
 %{perl_vendorlib}/IO
-
-
-
