@@ -1,15 +1,15 @@
 %define	upstream_name	 IO-All
-%define upstream_version 0.46
+%define upstream_version 0.50
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.46
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Magic all-in-one IO class
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/IO/IO-All-0.46.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/IO/IO-All-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(IO::String)
@@ -85,5 +85,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sat Dec 18 2004 Rafael Garcia-Suarez <rgarciasuarez@mandrakesoft.com> 0.33-1mdk
 - First MDK release
+
 
 

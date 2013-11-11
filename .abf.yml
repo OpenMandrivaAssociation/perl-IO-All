@@ -1,4 +1,5 @@
 removed_sources:
   IO-All-0.41.tar.gz: 54433a7d808a53128548b2a069e906c0dacc2fd2
-sources:
   IO-All-0.46.tar.gz: 1292fd897178f79f4a40555bffc89eb645d3f02a
+sources:
+  IO-All-0.50.tar.gz: 07cc71d462fba7469f3190df839e9a3c6dd427e3
