@@ -1,5 +1,5 @@
 %define	upstream_name	 IO-All
-%define upstream_version 0.56
+%define upstream_version 0.57
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -85,6 +85,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sat Dec 18 2004 Rafael Garcia-Suarez <rgarciasuarez@mandrakesoft.com> 0.33-1mdk
 - First MDK release
+
 
 
 
