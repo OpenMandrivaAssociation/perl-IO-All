@@ -1,11 +1,12 @@
 %define	upstream_name	 IO-All
-%define upstream_version 0.60
+%define upstream_version 0.61
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Magic all-in-one IO class
+
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
@@ -39,5 +40,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes README
 %{_mandir}/man*/*
 %{perl_vendorlib}/IO
+
 
 
