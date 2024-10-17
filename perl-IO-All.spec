@@ -7,7 +7,7 @@ Release:	3
 Summary:	Magic all-in-one IO class
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/IO::All
+Url:		https://metacpan.org/pod/IO::All
 Source0:	http://www.cpan.org/modules/by-module/IO/%{upstream_name}-%{upstream_version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl(IO::String)
